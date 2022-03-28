@@ -46,8 +46,8 @@ var paths = {
         js: 'src/js/**/*.js'
     },
     img: {
-        src: './src/img/**/*.!(db)',
-        dest: './build/img'
+        src: './src/images/**/*.!(db)',
+        dest: './build/images'
     },
     fonts: {
         src: './src/fonts/**/*',
@@ -177,9 +177,9 @@ gulp.task('assets', function () {
         .pipe(gulp.dest(paths.assets.dest))
 });
 
-gulp.task('assetsToDist', function () {
-    return gulp.src(paths.assets.src)
-        .pipe(gulp.dest('./dist/assets/'))
+gulp.task('fontsToDist', function () {
+    return gulp.src(paths.fonts.src)
+        .pipe(gulp.dest('./dist/fonts/'))
 });
 
 //copy images
@@ -218,7 +218,7 @@ gulp.task('useref', function () {
 });
 
 //build
-gulp.task('default', gulp.series(gulp.parallel('sass', 'imagesToDist', 'fonts', 'assetsToDist', 'htmlConcat', 'jsOptimize', 'useref')));
+gulp.task('default', gulp.series(gulp.parallel('sass', 'imagesToDist', 'fonts', 'fontsToDist', 'htmlConcat', 'jsOptimize', 'useref')));
 
 
 //build
