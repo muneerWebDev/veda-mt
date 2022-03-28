@@ -1,0 +1,105 @@
+// font family
+$Sintony: "Sintony", sans-serif;
+$Rufina: "Rufina", sans-serif;
+
+/*** overriding bootstrap variables  **/
+
+//typography
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-family-base: $Sintony;
+
+//colors
+$black: #000;
+$white: #fff;
+
+$gray-heading: #262626;
+$gray-text: #505050;
+$bg-light: #ebebeb;
+
+/* below are the gray slightly varied gray colors used for text */
+$gray-2: #505050;
+$gray-3: #6f7a7f;
+$gray-4: #797b7a;
+
+$border-color: #d3d5d1;
+$blue: #687dd8;
+$green: #7bc5a2;
+$progress-bar-bg: #9be9c0;
+$light-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+$dropdown-box-shadow: $light-box-shadow;
+
+$primary: $green;
+$secondary: $blue;
+$secondary-light: loghten($secondary, 10%);
+$headings-color: $gray-heading;
+$body-color: $gray-text;
+$link-color: $gray-text;
+$link-hover-color: $primary;
+// $dropdown-link-active-color: $gray-text;
+$input-group-addon-bg: transparent;
+$input-group-addon-border-color: transparent;
+$light: $bg-light;
+$nav-tabs-link-active-color: $primary;
+
+// dropdown 
+$dropdown-item-padding-y: .5rem;
+$progress-bar-transition:  width 2s ease;
+
+//accordion
+// $accordion-button-color: $gray-text;
+// $accordion-button-active-color: $gray-text;
+$accordion-button-active-bg: transparent;
+$accordion-button-border-color: transparent;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-box-shadow: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-border-color: $border-color;
+$accordion-body-padding-x: 0;
+$accordion-icon-width: 2.5rem;
+
+//font sizes
+$enable-rfs: false;
+$font-size-root: 62.5%;
+$font-size-smallest: 1.1rem;
+$font-size-small: 1.3rem;
+$font-size-base: 1.4rem;
+$font-size-medium: 1.6rem;
+$font-size-large: 1.8rem;
+
+$headings-font-family: $Rufina;
+$headings-font-weight: $font-weight-normal;
+$font-weight-base: $font-weight-normal;
+
+$h1-font-size: 4.8rem;
+$h2-font-size: 3rem;
+$h3-font-size: 2.4rem;
+$h4-font-size: 2rem;
+$h5-font-size: 1.7rem;
+$h6-font-size: $font-size-base;
+$headings-margin-bottom: 0;
+
+// buttons
+$btn-border-radius: 0;
+
+//container-width
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 985px,
+  xxl: 1155px,
+);
+
+//grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1325px,
+);
+
+//custom variables
+$containerOffsetWithGutters: calc(var(--containerOffset) + var(--bs-gutter-x));

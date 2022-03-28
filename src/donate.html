@@ -1,0 +1,174 @@
+@@include('template-parts/header.html', { "nav": 'null' })
+
+<section class="inner-banner dark" style="background-image: url(images/donate-banner.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="stencil" data-aos="fade-in" data-aos-delay="700">Donate Page</h1>
+                <span class="donate-strip" data-aos="fade-down" data-aos-delay="900"><img src="images/donate_now.png" alt="donate now"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="donate-sec py-5"  data-aos="fade-in" data-aos-delay="1200">
+    <div class="container py-5 my-5">
+        <form class="row needs-validation" novalidate>
+            <div class="col-12">
+                <h2 class="stencil stencil-centered mb-5">Donate</h2>
+
+                <div class="amount-box dark bg-primary">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="choose-amount pb-5 pb-md-3 mb-5 mb-md-0 p-md-3 pe-md-5 me-md-5">
+                                <h4 class="pb-3">Choose amount</h4>
+                                <div class="quick-amounts mb-5 mb-md-0">
+
+                                    <label class="custom-radio">100 USD
+                                        <input type="radio" checked="checked" name="amount" value="100">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="custom-radio">200 USD
+                                        <input type="radio" name="amount" value="200">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="custom-radio">300 USD
+                                        <input type="radio" name="amount" value="300">
+                                        <span class="checkmark"></span>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="entered-amount p-3 ps-md-5 ms-md-5">
+                                <h4 class="pb-3">Enter your amount</h4>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" placeholder="Enter Your Amount Here"
+                                        aria-label="Entered Amount" id="amountentered" required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter an amount
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donar-info">
+                    <div class="row">
+                        <div class="col-12 py-4 pt-5">
+
+                            <h2 class="stencil stencil-centered my-5 pt-5">Donor information</h2>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="number" class="form-control" minlength="7" maxlength="12"
+                                    id="validationCustom03" placeholder="phone Number" required>
+                                <div class="invalid-feedback">
+                                    Please choose a valid number.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Occupation"
+                                    id="validationCustom04">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="validationCustom05" placeholder="Email"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="validationCustom11" placeholder="Employer">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="validationCustom06" placeholder="Address"
+                                    required>
+
+                                <div class="invalid-feedback">
+                                    Please enter your address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="validationCustom07">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="validationCustom08">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="validationCustom09" placeholder="City"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <select class="form-select form-control" id="validationCustom10" required>
+                                    <option selected disabled value="">State...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="validationCustom12" placeholder="Post Code"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid Post Code.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Short description about yourself"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button class="btn btn-secondary" type="submit">Submit Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+@@include('template-parts/footer.html')

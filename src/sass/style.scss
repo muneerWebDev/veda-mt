@@ -1,0 +1,18 @@
+// fonts 
+@import '../fonts/Rufina/stylesheet';
+@import '../fonts/Sintony/stylesheet';
+@import '../fonts/simple-line-icons/simple-line-icons';
+
+//variables
+@import 'custom-variables';
+
+// plugins
+@import 'plugins/bootstrap';
+@import 'plugins/aos';
+
+//general styles
+@import 'animations'; 
+@import 'mixins';
+@import 'elements';
+@import 'global';
+@import 'sections';

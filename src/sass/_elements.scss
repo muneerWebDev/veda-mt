@@ -1,0 +1,158 @@
+@include media-breakpoint-down(xl) {
+    :root {
+        font-size: 52.6%;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 46.6%;
+        }
+    }
+}
+
+#pageloader {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    letter-spacing: 0.01em;
+    height: 100vh;
+    line-height: 1.9;
+    overflow: hidden;
+    overflow-y: auto;
+    &.nav-open,
+    &:not(.loaded) {
+        overflow: hidden;
+    }
+
+    &.loaded #pageloader {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+h1,
+.h1 {
+    .h3 {
+        display: block;
+        letter-spacing: 0.04em;
+    }
+
+    & + .btn-secondary {
+        margin-top: 4rem;
+    }
+}
+
+h2,
+.h2 {
+    & + p {
+        // margin-top: 3rem;
+    }
+}
+
+p + .btn-secondary {
+    margin-top: 3rem;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    .icon {
+        color: $primary;
+        margin-right: 1.2rem;
+        font-size: 1.8rem;
+    }
+}
+
+.btn-secondary {
+    text-transform: uppercase;
+    display: inline-block;
+    border: 2px solid $secondary;
+    color: $white;
+    padding: 1.25rem 3rem;
+    border-radius: 0;
+    white-space: nowrap;
+    &:hover{
+        color: $white;
+    }
+}
+
+.dark {
+    * {
+        color: $white !important;
+    }
+    .btn-secondary {
+        border: 2px solid $white;
+        color: $white;
+    }
+}
+
+.stencil {
+    position: relative;
+    padding-bottom: 0.5rem;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 2.2rem;
+        background: $primary;
+        top: 100%;
+        left: 0;
+    }
+
+    &:not(.stencil-centered) + p {
+        margin-top: 3rem;
+    }
+
+    &.stencil-centered {
+        text-align: center;
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .dark & {
+        &::after {
+            background: $white;
+        }
+    }
+}
+
+.progress-bar {
+    width: 0%;
+}
+
+.list-toggler.slidable {
+    position: relative;
+    &::after {
+        content: "\e604";
+        font-family: "simple-line-icons";
+        margin-left: 0.7rem;
+        font-size: $font-size-small;
+        transition: 0.3s;
+        display: inline-block;
+    }
+
+    &.active {
+        &::after {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.form-control {
+    height: 5.4rem;
+    padding: 1rem 2.4rem;
+    text-transform: uppercase;
+    text-shadow: 0 0;
+    color: $gray-heading;
+}
