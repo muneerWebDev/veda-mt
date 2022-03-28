@@ -116,7 +116,7 @@
             position: fixed;
             background: $bg-light;
             height: calc(100vh - var(--siteHeaderHeight)) !important;
-            bottom: var(--siteHeaderHeight);
+            top: var(--siteHeaderHeight);
             right: 0;
             width: 70vw;
             z-index: 99;
